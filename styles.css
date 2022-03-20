@@ -1,0 +1,38 @@
+/*
+1. Estilos de posicionamiento, static, absolute, relative, fixed
+2. Modelo de caja, margin, border, padding, content
+3. Tipografia, tipos, tamaños de fuente, etc
+4. Temas visuales,  box-shadow, border-radius, gradient, etc
+5. Otros, reglas CSS y más
+*/
+:root{
+    /* fuentes */
+    --font-dm-sans: 'DM Sans', sans-serif;
+    --font-inter: 'Inter', sans-serif; 
+    --size-300:300;
+	--size-400:400;
+	--size-500:500;
+	--size-700:700;
+    /* colores */
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue:#E7F5FF;
+    --warm-black: #201E1C;
+    --warm-black-1: #282623;
+    --grey: #BABABA;
+    --off-white: #FAF8F7;
+    --just-white: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: var(--font-dm-sans);
+}
+
