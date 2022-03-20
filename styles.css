@@ -36,3 +36,99 @@ html{
     font-family: var(--font-dm-sans);
 }
 
+header {
+    width: 100%;
+    height: 65vh;
+    min-height: 50vh;  
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 33.4rem;
+    text-align: center;
+    position: relative;
+}
+
+header > img{
+    width: 15rem;
+    height: 2.4rem;
+    margin-top: 5rem;
+    align-self: center;
+}
+
+.header__title-container{
+    width: 90%;
+    min-width: 28.8rem;
+    max-width: 90rem;
+    height: 21.8rem;
+    margin-top: 4rem;
+    text-align: center;
+    align-self: center;
+}
+
+.header__title-container h1{
+    color: var(--just-white);
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+}
+
+.header__title-container p
+{
+    color: var(--soft-orange);
+    margin: 2.4rem 0;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: var(--size-500);
+}
+
+header .header__button{
+    text-decoration: none;
+    color: var(--warm-black);
+    background-color: var(--off-white);
+    border-radius: 0.4rem;
+    width: 22.8rem;
+    height: 5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    place-content: center;
+    align-self: center;
+    align-items: center;
+    position: absolute;
+    bottom: -2rem;
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(89, 73, 30, 0.16);
+    font-weight: var(--size-700);
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.header__button img{
+    padding-top: 0.6rem;
+    padding-left: 0.5rem;
+}
+
+main{
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+.section-one{
+    width: 100%;
+    height: auto;
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.backgroungImg{
+    background-image: url('../Mobile-first-project/assets/images/Bitcoin.svg');
+}
+
+.section-one__description{
+    width: 90%;
+    min-width: 28.8rem;
+    max-width: 90 rem;
+    margin: 0 auto;
+}
+
+
+
