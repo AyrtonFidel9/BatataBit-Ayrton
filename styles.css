@@ -21,6 +21,7 @@
     --warm-black: #201E1C;
     --warm-black-1: #282623;
     --grey: #BABABA;
+    --grey-2: rgba(117, 117, 117, 1);
     --off-white: #FAF8F7;
     --just-white: #FFFFFF;
 }
@@ -44,7 +45,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 33.4rem;
+    min-width: 32rem;
     text-align: center;
     position: relative;
 }
@@ -110,6 +111,7 @@ main{
     width: 100%;
     height: auto;
     background-color: var(--off-white);
+    min-width: 32rem;
 }
 .section-one{
     width: 100%;
@@ -119,16 +121,237 @@ main{
     text-align: center;
 }
 
-.backgroungImg{
-    background-image: url('../Mobile-first-project/assets/images/Bitcoin.svg');
+.section-one .backgroundImg{
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+    background-image: url('./assets/images/Bitcoin.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .section-one__description{
     width: 90%;
     min-width: 28.8rem;
-    max-width: 90 rem;
+    max-width: 90rem;
     margin: 0 auto;
 }
 
+.section-one__description h2{
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+    margin-top: 4rem;
+    color: var(--warm-black);
+}
+
+.section-one__description p{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-top: 2.4rem;
+    font-weight: var(--size-500);
+    color: var(--grey-2);
+}
+
+.section-one__tables{
+    width: 90%;
+    margin: 0 auto;
+}
+.section-one__tables .tables__monedas{
+    width: 19.7rem;
+    height: auto;
+    background-color: var(--just-white);
+    margin: 0 auto;
+    border-radius: 0.8rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    font-family: var(--font-inter);
+}
+
+.tables__monedas .monedas__title{
+    font-size: 1.6rem;
+    color: #B5B0AC;
+    text-align: left;
+    padding: 1rem;
+    height: 4rem;
+    border-bottom: 0.1rem solid #f0eeee;
+    border-right: 0.1rem solid #f0eeee;
+}
+
+.tables__monedas .monedas__title:nth-child(7){
+    border-bottom: none;
+}
+
+.tables__monedas .monedas__value{
+    font-size: 1.4rem;
+    color: var(--grey-2);
+    padding: 1rem;
+    height: 4rem;
+    border-bottom: 0.1rem solid #f0eeee;
+}
+.tables__monedas .monedas__value:last-child{
+    border-bottom: none;
+}
+.monedas__value img{
+    margin-left: 1rem;
+}
+
+.table-one__estado, .table-two__estado{
+    height: 3.1rem;
+    width: 18rem;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-family: var(--font-inter);
+    margin-top: 1.6rem;
+}
+
+.table-one__estado{
+    background-color: var(--soft-orange);
+}
+
+.table-two__estado{
+    background-color: var(--soft-blue);
+}
+
+.table-one__estado p, .table-two__estado p{
+    font-weight: bold;
+}
+.table-one__estado p span, .table-two__estado p span{
+    font-weight: var(--size-500);
+}
+.table-one, .table-two{
+    position: relative;
+}
+.table-one .table-one__title, .table-two .table-two__title{
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding-top: 4.8rem;
+    padding-bottom: 1.2rem;
+    text-align: left;
+    width: 17.3rem;
+    margin: 0 auto;
+}
+.table-one .table-one__title{
+    color: rgba(255, 149, 54, 1);
+}
+
+.table-two {
+    display: none;
+}
 
 
+.table-two .table-two__title{
+    color: var(--secondary-blue);
+}
+.arrow-change{
+    background-image: url("./assets/icons/arrow_right.svg");
+    height: 2.4rem;
+    width: 2.4rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0.5rem;
+    top: 55%;
+    cursor: pointer;
+}
+
+.arrow-change-back{
+    cursor: pointer;
+    background-image: url("./assets/icons/arrow_left.svg");
+    height: 2.4rem;
+    width: 2.4rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 55%;
+}
+
+
+.main-product-detail{
+    width: 100%;
+    min-width: 32rem;
+    height: auto;
+    position: relative;
+    background-color: var(--warm-black);
+    padding-top: 6.4rem;
+    padding-bottom: 4rem;
+}
+
+.main-product-detail > img{
+    position: absolute;
+    width: 4rem;
+    height: 2.4rem;
+    left: calc(50% - 2rem);
+    top: -1rem;
+}
+
+.product-detail__title{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.product-detail__title h2{
+    color: var(--just-white);
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+}
+
+.product-detail__title p{
+    color: rgba(128, 128, 128, 1);
+    font-size: 1.4rem;
+    font-weight: var(--size-500);
+    margin-top: 2.4rem;
+    margin-bottom: 3.2rem;
+    line-height: 1.8rem;
+}
+
+.main-product-detail .product-cards__container{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+.product-cards__container .product-detail__card{
+    width: 28.8rem;
+    height: 15.2rem;
+    background-color: var(--warm-black-1);
+    border-radius: 0.4rem;
+    text-align: start;
+    margin-bottom: 1.6rem;
+    display: grid;
+    place-content: center;
+    padding: 0 1.6rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.16);
+}
+
+.product-detail__card img{
+    height: 2.4rem;
+    width: 2.4rem;
+    margin-bottom: 1.2rem;
+    margin-top: 1.4rem;
+}
+
+.product-detail__card .product__card-title{
+    color: var(--just-white);
+    font-weight: var(--size-700);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    line-height: 1.8rem;
+}
+
+.product-detail__card .product__card-body{
+    color: #808080;
+    font-weight: var(--size-500);
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-bottom: 2.2rem;
+}
