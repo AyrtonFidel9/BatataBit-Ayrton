@@ -24,6 +24,7 @@
     --grey-2: rgba(117, 117, 117, 1);
     --off-white: #FAF8F7;
     --just-white: #FFFFFF;
+    --section-white-off: #E5E5E5;
 }
 
 *{
@@ -355,3 +356,166 @@ main{
     line-height: 1.8rem;
     margin-bottom: 2.2rem;
 }
+
+.bitcoin-img-container{
+    width: 100%;
+    min-width: 32rem;
+    height: 38.7rem;
+    background-image: url('./assets/images/bitcoinbaby2x.jpg');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    text-align: center;
+}
+
+.bitcoin-img-container h2{
+    padding-top: 6.4rem;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.plans-main-container{
+    width: 100%;
+    min-width: 32rem;
+    padding-bottom: 7rem;
+    text-align: center;
+    height: 70%;
+}
+
+.plans-main-container .plans__title{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 6.4rem;
+}
+
+.plans__title h2{
+    color: var(--warm-black);
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+}
+
+.plans__title p{
+    padding-top: 2.4rem;
+    font-weight: var(--size-500);
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: rgba(117, 117, 117, 1);
+}
+.plans-container__slider{
+    display: flex;
+    height: 31.6rem;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 1rem;
+}
+
+.plans-container__card{
+    padding-top: 4rem;
+    scroll-snap-align: center;
+    position: relative;
+    margin: 5rem auto 0 auto;
+    width: 19rem;
+    min-width: 19rem;
+    height: 24.7rem;
+    background-color: var(--just-white);
+    border-radius: 0.8rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(89, 73, 30, 0.16);
+}
+
+.plans-container__card > p{
+    color: var(--just-white);
+    font-size: 1.2rem;
+    font-family: var(--font-inter);
+    line-height: 1.5rem;
+    font-weight: var(--size-500);
+    background-color: var(--bitcoin-orange);
+    border-radius: 0.8rem;
+    width: 10.1rem;
+    height: 3.1rem;
+    display: grid;
+    place-content: center;
+    position: absolute;
+    top: -1.2em;
+    left: calc(50% - 10.1rem/2);
+}
+.plans__detail-price{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.plans__detail-price h3{
+    color: black;
+    font-weight: var(--size-500);
+    font: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.plans__detail-price .detail-price__price{
+    font-family: var(--font-inter);
+    line-height: 6.3rem;
+    letter-spacing: -0.08em;
+    color: black;
+    font-weight: var(--size-700);
+    font-size: 5.2rem;
+    position: relative;
+}
+
+.detail-price__price sup{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: var(--size-500);
+    color: #363636;
+    position: absolute;
+    top: 1rem;
+    left: calc(50% - 3.8rem);
+}
+
+.detail-price__description{
+    font-size: var(--size-500);
+    font-family: var(--font-inter);
+    color: #757575;
+    line-height: 1.5rem;
+    margin: 1.6rem auto;
+}
+
+.detail-price__button{
+    margin-top: 1.6rem;
+    background-color: var(--off-white);
+    width: 15.1rem;
+    height: 4.8rem;
+    border-radius: 0.4rem;
+    border: 0.2rem solid var(--bitcoin-orange);
+    color: var(--warm-black);
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: var(--size-700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.detail-price__button > span{
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-left: 0.8rem;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    background-image: url('./assets/icons/arrow-right-btn.svg');
+}
+
+.plans-container__card .plan-basic, .plans-container__card .plan-free{
+    background-color: #f39d35;
+}
+
