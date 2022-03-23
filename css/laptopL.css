@@ -1,0 +1,11 @@
+.plans-container__card{
+    margin: 5rem 1rem;
+}
+
+.plans-container__slider{
+    overflow-y: hidden;
+}
+
+footer{
+    justify-content: space-around;
+}
