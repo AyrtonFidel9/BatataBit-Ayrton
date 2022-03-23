@@ -316,6 +316,7 @@ main{
 
 .main-product-detail .product-cards__container{
     width: 90%;
+
     margin: 0 auto;
     display: grid;
     place-content: center;
@@ -411,6 +412,7 @@ main{
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     gap: 1rem;
+    padding: 0 1.5rem;
 }
 
 .plans-container__card{
